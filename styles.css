@@ -1,0 +1,168 @@
+body {
+    background-color: #0D1117;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    color: #C9D1D9;
+}
+
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img {
+    cursor: pointer;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: url("Images/Banner.jpg");
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-left .menu-icon {
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-left .logo {
+    width: 3.5rem;
+}
+
+.nav-right h2 {
+    color: rgb(42, 148, 253);
+}
+
+/*------------- SideBar ---------------------*/
+
+.sidebar {
+    background-color: #161B22;
+    width: 10rem;
+    height: 100vh;
+    position: fixed;
+    top: 0.1;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.shortcut-links li img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.shortcut-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.shortcut-links li:first-child{
+    color: #ed3833;
+    font-weight: bold;
+}
+
+.shortcut-links li{
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+.shortcut-links hr {
+    border: 0;
+    height: 0.1rem;
+    background-color: #6e4848;
+    width: 80%;
+}
+
+.small-sidebar {
+    width: 4rem;
+}
+
+.small-sidebar li p {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Home Page*/
+
+.container {
+    background: transparent;
+    background-size: cover;
+    padding-left: 10.5rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+.large-container{
+    padding-left: 4.5rem;
+}
+
+@media (max-width: 350px) {
+    .menu-icon {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .container, .large-container {
+        padding-left: 1rem;
+    }
+}
+
+/*              Tabs                */
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+/*          HOME PAGE CONTENT WILL BE IN HOME_PAGE.css           */
+
+.home h4 span {
+    font-size: x-large;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .05rem #bababa;
+}
+
+.blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1d4ed8;
+    z-index: -100;
+}
+
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.btn:hover {
+    background-color: 1e40af;
+}

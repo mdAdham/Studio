@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BC Studio</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Home_Page.css">
+    <link rel="stylesheet" href="Tools_Page.css">
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="Images/menu.png" class="menu-icon">
+            <img src="Images/logo.png" class="logo">
+        </div>
+        <div class="nav-right flex-div">
+            <h2>BACKUPCOOKIE STUDIO</h2>
+        </div>
+    </nav>
+    <!-- -------------------------------- sidebar ---------------------------------->
+    <div class="sidebar">
+        <ul class="shortcut-links">
+            <li data-tab-target="#home" class="tab"><img src="Images/home.png"><p>Home</p></li>
+            <li data-tab-target="#tools" class="active tab"><img src="Images/downloads.png"><p>Tools</p></li>
+            <hr>
+        </ul>
+    </div>
+    <!-- --------------------------------- HOME PAGE ------------------------------->
+
+    <div class="container">
+        <!-- Home Page Code Goes Here-->
+        <div class="tab-content">
+            <div id="home" data-tab-content class="active home">
+                <!-- ------------------ Home Page Code Starts here ----------------->
+                <h2 class="header">Hey, You yaal know me Right?</h2>
+                <h4 class="sub-header">This is me <span>ADHAM</span></h4>
+                <span class="blur"></span>
+                <span class="blur"></span>
+                
+                <p>I have some Interesting Tools that you can download from the Studio</p>
+                <p>Click the Tools Tab to View The Projects</p>
+                <!-- ------------------ Home Page Code Ends here ------------------->
+            </div>
+            <div id="tools" data-tab-content class="tools">
+                <!-- ------------------ Tools Page Code Starts here ----------------->
+                <span class="blur"></span>
+                <span class="blur"></span>
+                <center><h1>TOOLS</h1></center>
+                <h2 class="header">OUR SOFTWARES</h2>
+                <p class="sub-header">
+                   These are the Softwares made by the Studio 
+                </p>
+                <div class="softwares">
+                    <div class="card">
+                        <div class="content">
+                            <h4>FileEncrypt Manager</h4>
+                            <h3>GUI APP</h3>
+                            <p>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Encrypt any file securely
+                            </p>
+                            <p>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Decrypt any file securely
+                            </p>
+                            <p>
+                                <i class="ri-user-3-line"></i>
+                                Designed with user-friendliness in mind
+                            </p>
+                        </div>
+                        <a href="Download/Filemanager/FileEncrypt Manager.zip" download="FileEncrypt Manager(GUI).zip">
+                            <button class="btn">Download Now</button>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h4>FileEncrypt Manager</h4>
+                            <h3>HEADLESS APP</h3>
+                            <p>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Encrypt any file securely
+                            </p>
+                            <p>
+                                <i class="ri-checkbox-circle-line"></i>
+                                Decrypt any file securely
+                            </p>
+                            <p>
+                                <i class="ri-error-warning-line"></i>
+                                To be used exclusively through the terminal
+                            </p>
+                        </div>
+                        <a href="Download/Filemanager/FileEncrypt Manager(Headless).zip" download="FileEncrypt Manager(Headless).zip">
+                            <button class="btn">Download Now</button>
+                        </a>
+                    </div>
+                </div>
+                <!--  Games  -->
+                <h2 class="header">OUR GAMES</h2>
+                <p class="sub-header">
+                    Explore the games developed by our studio,
+                     designed specifically for desktop play.
+                </p>
+                <span class="blur"></span>
+                <span class="blur"></span>
+                <div class="games">
+                    <div class="card">
+                        <div class="content">
+                            <h4>Swag Space</h4>
+                            <h3>v.1.0 LTS</h3>
+                            <p>
+                                <i class="ri-corner-down-right-line"></i>
+                                FUN TO PLAY
+                            </p>
+                            <p>
+                                <i class="ri-corner-down-right-line"></i>
+                                This is the Long-Term Support (LTS) version
+                            </p>
+                            <p>
+                                <i class="ri-corner-down-right-line"></i>
+                                AUDIO CAPABILITIES
+                            </p>
+                        </div>
+                        <a href="Download/Swag Space/Swag Space.zip" download="Swag Space v.1.0 LTS.zip">
+                            <button class="btn">Download Now</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- ------------------ Tools Page Code Ends here ----------------->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

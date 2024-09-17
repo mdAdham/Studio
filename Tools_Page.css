@@ -1,0 +1,163 @@
+.header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.softwares {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.softwares .card {
+    padding: 3rem 2rem;
+    background-color: #0a0c10;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.softwares .card:hover {
+    background-color: #161920;
+    border-color: #fff;
+}
+
+.softwares .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.softwares .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.softwares .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #b5b5b5;
+}
+
+.softwares .card p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.softwares .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.softwares .card button:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+@media (width < 900px)
+{
+    .softwares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px)
+{
+    .softwares {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.games {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.games .card {
+    padding: 3rem 2rem;
+    background-color: #0a0c10;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.games .card:hover {
+    background-color: #161920;
+    border-color: #fff;
+}
+
+.games .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.games .card h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.games .card h3 {
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #b5b5b5;
+}
+
+.games .card p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.games .card button {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.games .card button:hover {
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+@media (width < 900px)
+{
+    .games {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px)
+{
+    .games {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
