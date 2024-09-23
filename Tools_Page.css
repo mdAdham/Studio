@@ -29,6 +29,7 @@
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .softwares .card:hover {
@@ -103,6 +104,7 @@
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .games .card:hover {
@@ -159,5 +161,41 @@
 {
     .games {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::after, .card::before {
+    content: '';
+    position: absolute;
+    background: red;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff4545, #00ff99,#0061ff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 15px;
+    animation: 3s spin linear infinite;
+}
+
+.card::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
     }
 }

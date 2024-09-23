@@ -51,7 +51,7 @@ nav {
 
 .sidebar {
     background-color: #161B22;
-    width: 10rem;
+    width: 8rem;
     height: 100vh;
     position: fixed;
     top: 0.1;
@@ -76,6 +76,10 @@ nav {
 .shortcut-links li:first-child{
     color: #ed3833;
     font-weight: bold;
+}
+
+.shortcut-links li{
+    color: white;
 }
 
 .shortcut-links li{
